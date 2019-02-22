@@ -22,17 +22,4 @@ Card.propTypes = {
   img: PropTypes.string.isRequired,
 }
 
-// Make sure to include PropTypes.
-
-// CommentSection.propTypes = {
-//   comments: PropTypes.array
-// }
-//
-// PostContainer.propTypes = {
-//   post: PropTypes.shape({
-//     username: PropTypes.string.isRequired,
-//     comments: PropTypes.array
-//   })
-// }
-
 export default Card;

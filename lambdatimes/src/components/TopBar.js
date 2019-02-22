@@ -1,15 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-// @media (min-width: 1280px) {
-//   .top-bar .container {
-//     width: 1280px;
-//   }
-// }
-
-
-
 // Refactor this component to use styled components and not classNames.
 // You can find the corresponding CSS in the CSS/index.css file
 
@@ -33,14 +24,12 @@ const BigContainer = styled.div`
   color: #fff;
   letter-spacing: 1px;
   padding: 0 10px;
-
+  @media (min-width: 1280px) {
+    width: 1280px;
+  }
 `;
 
-// @media (min-width: 1280px) {
-//   .top-bar .container {
-//     width: 1280px;
-//   }
-// }
+
 
 const PlacedContainer = styled.div`
   display: flex;
@@ -61,7 +50,7 @@ const RightContainer = styled(PlacedContainer)`
 
 
 const Point = styled.span`
-  font-size; 9px;
+  font-size: 9px;
   cursor: pointer;
 `;
 
