@@ -33,7 +33,14 @@ const BigContainer = styled.div`
   color: #fff;
   letter-spacing: 1px;
   padding: 0 10px;
+
 `;
+
+// @media (min-width: 1280px) {
+//   .top-bar .container {
+//     width: 1280px;
+//   }
+// }
 
 const PlacedContainer = styled.div`
   display: flex;
@@ -76,9 +83,32 @@ const FatPoint = styled(Point)`
 const LeftPoint = styled(FatPoint)`
   margin-right: 25%;
 `
-// all contents in PlacedContainer are inside a Span, so I suppose it doesn't matter Much.
-// const BigContainer
-// const PlacedContainer
+
+// .top-bar .container .container-left {
+//   display: flex;
+//   justify-content: none;
+//   align-items: center;
+//   flex-direction: row;
+//   flex: 1;
+//   font-size: 11px;
+// }
+// .top-bar .container .container-center {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: row;
+//   flex: 3;
+//   font-size: 9px;
+// }
+// .top-bar .container .container-right {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   flex-direction: row;
+//   flex: 1;
+//   font-size: 11px;
+//   font-weight: bold;
+// }
 
 const TopBar = () => {
   return (

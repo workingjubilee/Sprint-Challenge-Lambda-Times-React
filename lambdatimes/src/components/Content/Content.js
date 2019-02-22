@@ -52,7 +52,7 @@ export default class Content extends Component {
   render() {
     return (
       <div className="content-container">
-      <pre>this.state = {JSON.stringify(this.state, null, 2)}</pre>
+
         {/*
           Add 2 props to the Tabs component,
           `selectedTab` that includes the currently selected tab

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 // background: ${props => props.primary ? "palevioletred" : "white"};
 // color: ${props => props.primary ? "white" : "palevioletred"};
@@ -71,6 +72,10 @@ const Tab = props => {
     </div>
   );
 };
+
+Tab.propTypes = {
+  tab: PropTypes.string.isRequired
+}
 
 // Make sure you include PropTypes on your props.
 
