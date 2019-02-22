@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from './Card';
 
 const Cards = props => {
@@ -10,6 +10,9 @@ const Cards = props => {
           new Card component for each passing the card as the only prop*/}
     </div>
   )
+}
+
+Cards.propTypes = {
 }
 
 

@@ -15,48 +15,48 @@ const LambdaHeader = styled.header`
   height: 120px;
   margin-top: 44px;
   padding-bottom: 15px;
-  @media (min-width: 1280px) {
-    .header {
-      width: 1280px;
-    }
-  }
 `;
 
-// rip off "header" in the css
-
-// .header h1 {
-//   font-size: 60px;
-//   font-family: Didot, serif;
-//   font-weight: bold;
-//   flex: 8;
-//   text-align: center;
-//   color: #000;
-// }
-// .header span {
-//   align-self: flex-end;
-//   font-size: 11px;
-//   font-weight: bold;
-//   letter-spacing: 1px;
-// }
-// .header .date {
-//   margin-left: 25px;
-//   flex: 1;
-// }
-// .header .temp {
-//   text-align: right;
-//   margin-right: 25px;
-//   flex: 1;
+// @media (min-width: 1280px) {
+//   .header {
+//     width: 1280px;
+//   }
 // }
 
-// Refactor this component to use styled components and not classNames.
-// You can find the corresponding CSS in the CSS/index.css file
+const TheTitle = styled.h1`
+  font-size: 60px;
+  font-family: Didot, serif;
+  font-weight: bold;
+  flex: 8;
+  text-align: center;
+  color: #000;
+`
+
+const TheDate = styled.span`
+  align-self: flex-end;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 25px;
+  flex: 1;
+`
+
+const TheTemp = styled.span`
+  align-self: flex-end;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: right;
+  margin-right: 25px;
+  flex: 1;
+`
 
 const Header = () => {
   return (
     <LambdaHeader>
-      <span className="date">SMARCH 32, 2018</span>
-      <h1>Lambda Times</h1>
-      <span className="temp">98°</span>
+      <TheDate>SMARCH 32, 2018</TheDate>
+      <TheTitle>Lambda Times</TheTitle>
+      <TheTemp>98°</TheTemp>
     </LambdaHeader>
   )
 }
