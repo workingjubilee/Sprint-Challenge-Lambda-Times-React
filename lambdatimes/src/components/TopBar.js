@@ -1,7 +1,11 @@
 import React from 'react';
 
-// Refactor this component to use styled components and not classNames. 
+// Refactor this component to use styled components and not classNames.
 // You can find the corresponding CSS in the CSS/index.css file
+
+// const TopDiv
+// const BigContainer
+// const PlacedContainer
 
 const TopBar = () => {
   return (
