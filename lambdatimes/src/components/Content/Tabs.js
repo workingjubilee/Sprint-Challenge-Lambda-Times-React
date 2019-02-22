@@ -18,6 +18,10 @@ const Tabs = props => {
 // /* {props.tabs.map(tab => return <Tab key={tab.name} />)} */
 // Make sure to use PropTypes to validate your types!
 
+Tabs.propTypes = {
+  tabs: PropTypes.array.isRequired
+}
+
 // CommentSection.propTypes = {
 //   comments: PropTypes.array
 // }

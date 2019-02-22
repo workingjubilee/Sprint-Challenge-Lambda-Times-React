@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 // const somethingTemp
 // const somethingDate
@@ -19,11 +18,6 @@ const LambdaHeader = styled.header`
 
 `;
 
-// @media (min-width: 1280px) {
-//   .header {
-//     width: 1280px;
-//   }
-// }
 
 // @media (min-width: 1280px) {
 //   .header {
