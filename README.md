@@ -29,9 +29,20 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+    PropTypes guarantee that the presumed data flow is in fact the actual data flow.
 - [ ] Describe a life-cycle event in React?
+
+    React has a series of "lifecycle" events that can be used by a developer to control the way the surrounding code reacts to a component being made or destroyed, such as delaying a check until a component has fully loaded.
+
 - [ ] Explain the details of a Higher Order Component?
+
+  A higher order component is a component that takes another component as an argument and modifies how it operates. Uhm. That's the details. Uhhh. Styled components are a good example, they take HTML and then attach a bunch of style modifications.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+  CSS benefits: right there, everyone knows it.
+  SCSS / LESS benefits: less universal knowledge, require specialized tooling, but highly powerful.
+  CSS in JS (e.g. styled-components): requires that the styled-components library code is loaded into the package, which has its own problems like requiring React to be at a certain version and so on, which risks future React code changes breaking it inherently rather than just the code you write, requiring potentially a rewrite of both. That sounds like a huge drawback but being much closer to the machine also means you can have it interoperate much more smoothly with your JS modifications.
 
 ## Project Setup
 
